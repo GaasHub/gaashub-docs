@@ -1,41 +1,51 @@
-# Website
+# GaasHub Documentation Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+The official documentation for [GaasHub](https://gaashub.com), built with [Docusaurus 3](https://docusaurus.io).
 
-## Installation
+## Development
 
-```bash
-yarn
-```
-
-## Local Development
+### Installation
 
 ```bash
-yarn start
+npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+### Local Development
 
 ```bash
-yarn build
+npm run start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This starts a local development server at `http://localhost:3000`.
+
+### Build
+
+```bash
+npm run build
+```
+
+The static files are generated in the `build` directory.
 
 ## Deployment
 
-Using SSH:
+### Automated Deployment (Recommended)
+
+This repository is configured with **GitHub Actions**. Any push to the `main` branch will automatically trigger a build and deploy to the `gh-pages` branch.
+
+### Manual Deployment
+
+If you need to deploy manually from your local machine:
 
 ```bash
-USE_SSH=true yarn deploy
+GIT_USER=<your-github-username> npm run deploy
 ```
 
-Not using SSH:
+For SSH-based deployment:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+USE_SSH=true npm run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
+
+*For more information, refer to the [Docusaurus Deployment Documentation](https://docusaurus.io/docs/deployment).*
