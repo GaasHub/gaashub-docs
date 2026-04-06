@@ -14,11 +14,6 @@ const config = {
   tagline: 'The ultimate data platform for modern AI',
   favicon: 'img/logo.svg',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
   // Set the production url of your site here
   url: 'https://GaasHub.github.io',
   baseUrl: '/gaashub-docs/',
