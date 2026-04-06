@@ -48,7 +48,7 @@ if __name__ == "__main__":
 Open your terminal and use the `gaashub` command to execute your script:
 
 ```bash
-gaashub run first-job.py
+gaashub first-job.py
 ```
 
 ## Expected Output

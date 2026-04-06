@@ -42,7 +42,7 @@ if __name__ == "__main__":
 Use the `gaashub` command to run your script on a remote GPU node:
 
 ```bash
-gaashub run hello.py
+gaashub hello.py
 ```
 
 ## Step 4: Expected Output
