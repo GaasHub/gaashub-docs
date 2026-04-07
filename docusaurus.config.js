@@ -102,7 +102,8 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/index',
+                type: 'doc',
+                 docId: 'index'
               },
             ],
           },
